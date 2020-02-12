@@ -3,10 +3,12 @@ package com.example.skillboxhw_410
 import kotlin.concurrent.timer
 
 class Battle (
-    var team1:Team,
-    var team2:Team
+    private var team1:Team,
+    private var team2:Team
 ){
+
     var isBattleEnded:Boolean=false
+    private set
     fun printAState(state:BattleState){
         when(state){
             BattleState.Progress->{

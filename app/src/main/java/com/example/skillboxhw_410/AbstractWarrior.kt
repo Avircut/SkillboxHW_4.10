@@ -4,10 +4,10 @@ import kotlin.math.max
 import kotlin.random.Random
 
 abstract class AbstractWarrior(
-    val id:Int,
+    private val id:Int,
     val maximumHP:Int,
-    val accuracy: Int,
-    val weapon: AbstractWeapon,
+    private val accuracy: Int,
+    private val weapon: AbstractWeapon,
     override val chanceToEvade: Int
 ):Warrior{
     init {
